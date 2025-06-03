@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffe4ec;
+    margin: 0;
+    padding: 0;
+    color: #5a1846;
+}
+
+/* Contenedor principal */
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Tarjeta de proyecto */
+.tarjeta {
+    background: #fff0f6;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(255, 105, 180, 0.10);
+    width: 320px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 2px solid #ffb6d5;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 6px 24px rgba(255, 105, 180, 0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: #ffd6e6;
+    border: 1.5px solid #ffb6d5;
+}
+
+.tarjeta h2 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0 0.5rem 0;
+    color: #e75480;
+    text-align: center;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    color: #a8326e;
+}
+
+.tarjeta a {
+    color: #fff;
+    background: #e75480;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0.2rem;
+    transition: background 0.2s;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 1px 4px rgba(231, 84, 128, 0.10);
+}
+
+.tarjeta a:hover {
+    background: #b8326e;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    #contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .tarjeta {
+        width: 95%;
+    }
+}
